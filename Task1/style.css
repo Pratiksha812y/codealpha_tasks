@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    background: rgb(228, 240, 245);
+}
+.container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 50px;
+}
+.container h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+.filter_buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filter_buttons button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: 0.2px solid gainsboro;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
+    font-family: 'Times New Roman';
+}
+.filter_buttons button.active{
+        background: blue;
+        color: #fff;
+}
+.filterable_cards{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.filterable_cards .card{
+    flex-grow: 1;
+    flex-basis: 300px;
+    background: #fff;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
+}
+.card.hide{
+    display: none;
+
+}
+.filterable_cards .card img{
+    width: 100%;
+    height: 210px;
+    border-radius: 8px 8px 0 0;
+}
